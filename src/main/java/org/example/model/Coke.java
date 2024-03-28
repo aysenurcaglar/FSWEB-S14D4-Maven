@@ -2,7 +2,12 @@ package org.example.model;
 
 public class Coke extends ProductForSale {
     private int amount;
-    public Coke(String type, double price, String description, int amount) {
+
+    public Coke(String type, int price, String description) {
+        super(type, price, description);
+    }
+
+    public Coke(String type, int price, String description, int amount) {
         super(type, price, description);
         this.amount = amount;
     }

@@ -2,10 +2,10 @@ package org.example.model;
 
 public abstract class ProductForSale {
     private String type;
-    private double price;
+    private int price;
     private String description;
 
-    public ProductForSale(String type, double price, String description) {
+    public ProductForSale(String type, int price, String description) {
         this.type = type;
         this.price = price;
         this.description = description;
@@ -15,7 +15,7 @@ public abstract class ProductForSale {
         return type;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 

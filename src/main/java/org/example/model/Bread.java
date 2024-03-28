@@ -2,7 +2,12 @@ package org.example.model;
 
 public class Bread extends ProductForSale {
     private boolean sourdough;
-    public Bread(String type, double price, String description, boolean sourdough) {
+
+    public Bread(String type, int price, String description) {
+        super(type, price, description);
+    }
+
+    public Bread(String type, int price, String description, boolean sourdough) {
         super(type, price, description);
         this.sourdough = sourdough;
     }
