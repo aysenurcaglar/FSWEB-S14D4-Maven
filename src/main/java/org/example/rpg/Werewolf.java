@@ -24,7 +24,10 @@ public class Werewolf extends Monster implements Bleedable, Poisonable {
         System.out.println("Hit Points: " + getHitPoints());
         System.out.println("Damage: " + getDamage());
         System.out.println("Attack: " + attack());
-        System.out.println("Does it swear?: " + (swearwolf ? "Of course! They're all a bunch of Swearwolves!" : "They're Werewolves, not Swearwolves!"));
+        System.out.println("Does it swear?: " +
+                (swearwolf ? "Of course! They're all a bunch of Swearwolves!"
+                        :
+                        "They're Werewolves, not Swearwolves!"));
         System.out.println("*************");
     }
 
